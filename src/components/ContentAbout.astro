@@ -13,56 +13,48 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
     devOps: [
-        'GitLab',
         'GitHub',
-        'Cloudflare',
         'Docker'
     ],
     frontend: [
         'Angular',
-        'JavaScript',
         'TypeScript',
         'TailwindCSS',
-        'PrimeNG',
-        'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
         'Markdown',
-        'WordPress'
+        'SwiftUI',
+        'Kotlin',
+        'KMM'
     ],
     backend: [
-        'Supabase',
+        'NestJS',
+        'SpringBoot'
         'Node.js',
-        'Bun',
-        'Deno',
+        'Supabase',
         'PostgreSQL',
         'MySQL',
         'S3 Storage',
-        'Resend'
+        'Minio'
     ]
 };
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'Lucas Mercier',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
         ...techStack.frontend
     ],
     interests: [
-        'Open Source',
-        'Security',
-        'Privacy',
-        'Performance',
-        'Self-Hosting',
-        'Networking'
+        'Web development',
+        'IOS development',
+        'Clean code',
+        'Three.JS',
+        'Music App'
     ]
 };
 
@@ -70,15 +62,11 @@ const me: Developer = {
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
+            return 'https://github.com/lucas6RM';
         case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
+            return 'https://www.linkedin.com/in/lucas-mercier-95404056/';
         case 'email':
-            return 'hi@devidev.io';
+            return 'lucasmercier.dev@gmail.com';
         default:
             return 'Send fax.';
     }

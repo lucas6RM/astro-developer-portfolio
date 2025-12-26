@@ -11,24 +11,12 @@ interface Project {
 };
 
 const projects: Project[] = [{
-    name: 'Papersend.io',
-    description: 'Papersend is the free alternative to DocSend for secure document sharing, tracking, and Data Rooms. Customize branding, control access, and protect your documents.',
+    name: 'Mon Activite Psy',
+    description: 'Mon Activite Psy is a simple and efficient activity management application for psychologists subject to French regulations.',
     link: {
-        url: 'https://papersend.io/',
+        url: 'https://lucas6rm.github.io/LandingPageMonActivitePsy/',
     }
-}, {
-    name: 'Qivi.io',
-    description: 'Qivi is an all-in-one application designed to streamline business operations, enhance productivity, and maximize success. Data security is a priority.',
-    link: {
-        url: 'https://qivi.io/'
-    }
-}, {
-    name: 'TECHPOINT.de',
-    description: 'TECHPOINT is a local IT service provider based in the Starnberg district and the Fünfseenland region, specializing in delivering reliable and modern IT solutions.',
-    link: {
-        url: 'https://techpoint.de/'
-    }
-}];
+},];
 ---
 
 <div>
@@ -60,8 +48,8 @@ const projects: Project[] = [{
 
                                 border border-gray-600 rounded-lg
 
-                                hover:text-primary
-                                hover:border-primary
+                                hover:text-purple-300
+                                hover:border-purple-300
                             ">
                             {project.link.buttonLabel || 'Open Project Website'}
                         </a>

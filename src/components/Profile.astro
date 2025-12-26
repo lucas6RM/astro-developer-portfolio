@@ -3,10 +3,10 @@ import { Picture } from 'astro:assets';
 import ProfilePicture from '../assets/profile.png';
 
 const profile = {
-    name: 'Dejan Vi.',
-    title: 'Full Stack Developer',
-    location: 'Munich, Germany',
-    description: 'Passionate web developer focused on creating clean, efficient, and scalable web applications with a modern tech stack. Specialized in Angular, TypeScript, and Supabase, delivering responsive and intuitive user interfaces. Even my name includes "dev".'
+    name: 'Lucas Mercier',
+    title: 'Full Stack Web Developer & IOS hobbyist',
+    location: 'Marseille, France',
+    description: 'I am Lucas Mercier, a micro-entrepreneur based in France, developing and publishing Web & mobile applications.'
 };
 ---
 
@@ -17,11 +17,11 @@ const profile = {
         <Picture
             src={ProfilePicture}
             formats={['webp']}
-            width={96}
-            height={96}
+            widths={[96, 192, 256]}
+            sizes="96px"
             alt={'Profile picture ' + profile.name}
             title={profile.name}
-            class="w-24 h-24 rounded-xl object-cover border-2 border-primary mx-auto sm:mx-0"
+            class="w-24 h-24 rounded-xl object-cover border-2 border-primary mx-auto sm:mx-0 p-1"
         />
 
         <div>
